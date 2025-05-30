@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Two Factor - UI</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="two-factor">
+			<div class="icon">
+				<img src="./icons/mobile-login.svg" draggable="false" />
+			</div>
+
+			<div class="content">
+				<h2>Two-Factor Authentication</h2>
+				<p>Enter the 6-digit verification code sent to email github@Thiagobks</p>
+			</div>
+
+			<div class="input-container">
+				<div class="input-box">
+					<input data-index="0" type="text" maxlength="1" />
+				</div>
+				<div class="input-box">
+					<input data-index="1" type="text" maxlength="1" />
+				</div>
+				<div class="input-box">
+					<input data-index="2" type="text" maxlength="1" />
+				</div>
+				<div class="input-box">
+					<input data-index="3" type="text" maxlength="1" />
+				</div>
+				<div class="input-box">
+					<input data-index="4" type="text" maxlength="1" />
+				</div>
+				<div class="input-box">
+					<input data-index="5" type="text" maxlength="1" />
+				</div>
+			</div>
+
+			<button id="auth-button" class="auth-button hidden">Continue</button>
+
+			<small> * We always seek to provide a safer environment for our potential customers.</small>
+		</div>
+	</body>
+
+	<script src="main.js"></script>
+</html>

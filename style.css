@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+	--color-base: #5b5fa4;
+	--color-base-10: #5b5fa410;
+	--color-base-20: #5b5fa420;
+	--color-base-30: #5b5fa430;
+
+	--color-text-dark: #1B1B1B;
+	--color-text-muted: #5B5B5B;
+	--color-border: #1B1B1B30;
+	--color-white: #fff;
+
+	--color-indigo: #6366F1;
+	--color-indigo-10: #6366F110;
+	--color-indigo-12: #6366F120;
+	--color-indigo-30: #6366F150;
+}
+
+/* 
+:root {
+	--color-base: #5b5fa4;
+	--color-base-10: #5b5fa410;
+	--color-base-20: #5b5fa420;
+	--color-base-30: #5b5fa430;
+
+	--color-text-dark: #1B1B1B;
+	--color-text-muted: #5B5B5B;
+	--color-border: #1B1B1B30;
+	--color-white: #fff;
+
+	--color-indigo: #6366F1;
+	--color-indigo-10: #6366F110;
+	--color-indigo-12: #6366F120;
+	--color-indigo-30: #6366F150;
+} */
+
+
+* {
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nunito Sans", 'system-ui';
+	color: var(--color-text-dark);
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: linear-gradient(30deg, var(--color-base-20) 20%, var(--color-base-10) 50%, var(--color-base-30) 100%);
+}
+
+.two-factor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	max-width: 448px;
+	width: calc(100% - 48px);
+	padding: 32px;
+	border-radius: 24px;
+	background-color: var(--color-white);
+	box-shadow: 0 0 16px 2px var(--color-base-30);
+	border: 2px solid var(--color-base-20);
+}
+
+.two-factor .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 48px;
+	max-width: 50%;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+}
+
+.two-factor .icon img {
+	width: 100%;
+	display: block;
+}
+
+.two-factor .content {
+	display: grid;
+	text-align: center;
+	gap: 12px;
+	word-wrap: break-word;
+}
+
+.content>h2 {
+	font-weight: 800;
+	word-wrap: break-word;
+}
+
+.content>p {
+	color: var(--color-text-muted);
+	font-weight: 400;
+}
+
+.input-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 8px;
+	width: 100%;
+	padding: 8px;
+}
+
+.input-container .input-box {
+	aspect-ratio: 1 / 1.75;
+}
+
+.input-box input {
+	outline: 2px solid transparent;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 1.35rem;
+	font-weight: 900;
+	border-radius: 12px;
+	border: 2px solid var(--color-border);
+	transition: 0.3s border, 0.2s background-color, 0.5s outline;
+}
+
+.input-box input:hover {
+	outline: 1px solid var(--color-indigo-30);
+	border: 2px solid var(--color-indigo);
+	background-color: var(--color-indigo-10);
+}
+
+.input-box input:focus {
+	border: 2px solid var(--color-indigo);
+	background-color: var(--color-indigo-12);
+}
+
+.auth-button {
+	width: 100%;
+	padding: 20px;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	background-color: var(--color-indigo);
+	color: var(--color-white);
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.hidden {
+	display: none;
+}
