@@ -9,7 +9,6 @@ Esta é uma interface simples de um sistema de login com autenticação de dois 
 
 [![Skills](https://skillicons.dev/icons?i=html,css,javascript&theme=light)](https://skillicons.dev)
 
----
 ## 🚀 Rodando Localmente 
 
 1. Clone o repositorio:
