@@ -3,7 +3,7 @@
 
 Esta é uma interface simples de um sistema de login com autenticação de dois fatores (2FA), construída com HTML, CSS e JavaScript.Ela não possui lógica ou validações, sendo apenas o design da interface (UI).
 
-![Preview](./preview.png)
+<img src="./preview.png" width="200" />
 
 ## 💻 Stack Usada
 
